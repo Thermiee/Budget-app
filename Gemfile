@@ -16,6 +16,8 @@ gem 'dotenv'
 
 gem 'devise'
 
+gem 'factory_bot_rails'
+
 gem 'bootstrap', '~> 5.1.3'
 
 # Use the Puma web server [https://github.com/puma/puma]
