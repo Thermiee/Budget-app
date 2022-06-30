@@ -14,6 +14,10 @@ gem 'pg', '~> 1.1'
 
 gem 'dotenv'
 
+gem 'devise'
+
+gem 'bootstrap', '~> 5.1.3'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
