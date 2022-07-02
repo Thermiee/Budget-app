@@ -1,12 +1,10 @@
 <header class="bg-primary p-2 d-flex justify-content-around align-items-center">
+
     <div>
-      <i class="bi bi-wallet-fill fs-1 text-light"></i>
+      <h1 class="text-center"><i class="bi bi-wallet-fill fs-1"></i>  All Groups </h1>
     </div>
     <div>
-      <h1 class="text-center text-light"> All Groups </h1>
-    </div>
-    <div>
-      <li class="nav-item">
+      <li class="nav-item align-items-center">
         <%= link_to "Sign Out", destroy_user_session_path, method: :get, class: 'nav-link btn btn-danger text-white' %>
       </li>
     </div>
@@ -19,7 +17,7 @@
       </div>
     <% else %>
     <% @groups.each do |group| %>
-      <div class="d-flex border border-1 p-4 shadow-sm align-items-center mt-3 me-auto group_card">
+      <div class="d-flex border border-1 p-4 shadow-sm align-items-center mt-3 me-auto group_card justify-content: space-between">
         <div>
           <img src=<%= group.icon %> alt=<%= group.name %> class="img-thumbnail" style="width: 30%">
         </div>

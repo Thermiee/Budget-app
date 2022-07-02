@@ -1,0 +1,7 @@
+.d-flex.border.border-1.p-4.shadow-sm.align-items-center.mt-3.me-auto.group_card {
+    justify-content: space-between;
+}
+
+li.nav-item {
+    list-style-type: none;
+}
