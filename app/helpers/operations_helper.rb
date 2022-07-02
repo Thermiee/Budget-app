@@ -1,11 +1,10 @@
 module OperationsHelper
   def find_operations
-    operations = []
-    groups_operations = GroupsOperation.where(group_id: params[:group_id]).order(created_at: :desc)
-    groups_operations.each do |group_operation|
-      operations << Operation.find_by(id: group_operation.operation_id)
+    if params[:group_id]
+      Group.find(params[:group_id]).operations
+    else
+      Operation.all
     end
-    operations
   end
 
   def create_groups_operations(operation, array)

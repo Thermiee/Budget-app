@@ -5,3 +5,23 @@
 li.nav-item {
     list-style-type: none;
 }
+
+header.headercontainer {
+    text-align: center;
+    background-color: #3778c2;
+    padding: 15px;
+}
+
+.actions.form-group {
+    background-color: #3778c2;
+    margin: 20px 0px;
+    width: 85px;
+}
+
+.border {
+    margin-top: 20px;
+}
+
+.btn.btn-success {
+    background-color: #5fb523;
+}

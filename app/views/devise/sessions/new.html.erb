@@ -1,13 +1,13 @@
-<header class="header container primary-gradient-background">
+<header class="headercontainer">
   <h1 class="position-absolute">
     <%= link_to root_path do %>
-      <i class="bi bi-arrow-left"></i>
+      <i class="bi bi-caret-left-fill m-2 fs-4 rounded p-2 text-dark"></i>
     <% end %>
   </h1>
   <h1 class="text-center margin-y">Log in</h1>
 </header>
 
-<div class="container form margin-y border-y">
+<div class="container form margin-y border-y border">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field form-group">
       <%= f.label :email, class: "form-label" %>
