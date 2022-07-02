@@ -3,14 +3,14 @@ require 'rails_helper'
 RSpec.describe 'Operations new page', type: :system do
   before :example do
     driven_by(:rack_test)
-    @user = FactoryBot.create(:user, :confirmed)
+    @user = FactoryBot.create(:user)
     @group = FactoryBot.create(:group, author_id: @user.id)
     sign_in @user
     visit new_operation_path
   end
 
   it 'should display welcoming message' do
-    expect(page).to have_content('Create Operation')
+    expect(page).to have_content('Add Operations')
   end
 
   it 'should display all fields' do
@@ -20,7 +20,6 @@ RSpec.describe 'Operations new page', type: :system do
   end
 
   it 'should display all links' do
-    find(:css, 'i.bi.bi-arrow-left')
     find_button 'Save'
   end
 

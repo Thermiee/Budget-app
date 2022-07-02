@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Groups', type: :request do
   before :example do
-    @user = FactoryBot.create(:user, :confirmed)
+    @user = FactoryBot.create(:user)
     sign_in @user
   end
 

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Groups new page', type: :system do
   before :example do
     driven_by(:rack_test)
-    @user = FactoryBot.create(:user, :confirmed)
+    @user = FactoryBot.create(:user)
     sign_in @user
     visit new_group_path
   end
@@ -18,7 +18,6 @@ RSpec.describe 'Groups new page', type: :system do
   end
 
   it 'should display all links' do
-    find(:css, 'i.bi.bi-arrow-left')
     find_button 'Save'
   end
 
