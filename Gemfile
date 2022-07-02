@@ -74,7 +74,6 @@ group :development do
   gem 'letter_opener'
   gem 'sqlite3', '~> 1.4'
   gem 'web-console'
-  
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
